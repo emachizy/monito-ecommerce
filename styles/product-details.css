@@ -477,7 +477,10 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .left-nav a {
+  nav {
+    display: none;
+  }
+  .left-nav  {
     display: none;
   }
   .navbar form {
@@ -488,6 +491,29 @@ footer {
   }
 
   header {
+    width: 100%;
+  }
+
+  .mobile-nav {
+    background-image: url(../images/bg-logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 10px; */
+    padding: 2px 14px 25px 10px;
+  }
+
+  .details {
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* header {
     width: 100%;
   }
 
@@ -520,7 +546,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     margin: auto;
     gap: 5px;
-  }
+  } */
 
   /* #whatsnew {
     width: 100%;
