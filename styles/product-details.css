@@ -248,9 +248,40 @@ td {
   color: #667479;
 }
 
+.customer h1{
+  margin: 20px 0px;
+}
+
+
+
+.customer .customer-img{
+  /* width: 80%; */
+  display: flex;
+  gap: 10px;
+  border-radius: 10px;
+  
+}
+
+.customer .customer-img img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+
 /* .details-text .head p {
   display: flex;
 } */
+
+.product {
+  margin: 54px 0px;
+}
+
+.product-header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #003459;
+}
 
 .product-btn {
   display: flex;
