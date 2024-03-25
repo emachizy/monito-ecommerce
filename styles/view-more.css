@@ -328,7 +328,7 @@ footer {
   /* left: 130px; */
 }
 
-.top-half form {
+.top-half>form {
   background-color: #003459;
   width: 80%;
   margin: 0 auto;
