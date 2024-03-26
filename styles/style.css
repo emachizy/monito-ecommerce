@@ -29,6 +29,11 @@ nav {
   background-position: 2% -15px;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
 .mobile-nav {
   display: none;
 }
@@ -712,7 +717,7 @@ footer {
   nav {
     display: none;
   }
-  .left-nav  {
+  .left-nav {
     display: none;
   }
   .navbar form {
@@ -726,15 +731,101 @@ footer {
     width: 100%;
   }
 
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .m-nav-link {
+    display: none;
+  }
+
+  .m-nav-link {
+    transition: 0.3s;
+  }
+
+  .m-nav-link.active {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+      102.87deg,
+      #fceed5 6.43%,
+      #fceed5 78.33%,
+      #ffe7ba 104.24%
+    );
+
+    /* padding: 0 20px; */
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 10px;
+  }
+
+  .m-nav-link a {
+    font-size: 18px;
+    text-decoration: none;
+    padding: 15px 0px;
+    transition: 0.3s ease;
+  }
+
+  .m-nav-link a:hover {
+    color: #003459;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #000;
+  }
+
   .mobile-nav {
     background-image: url(../images/bg-logo.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     /* margin-top: 10px; */
     padding: 2px 14px 25px 10px;
+  }
+
+  .mobile-nav .search {
+    max-width: 30px;
+  }
+
+  .mobile-nav .search form {
+    width: 50px;
+    display: inline-flex;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  .mobile-nav .search :is(input, img) {
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+
+  .mobile-nav .search form input {
+    width: 0;
+    transition: width 0.3s;
+  }
+
+  .mobile-nav .search:focus-within input{
+    width: 60px;
+
   }
 
   .hero {
@@ -786,6 +877,11 @@ footer {
     color: #003459;
     font-size: 16px;
     font-weight: 500;
+  }
+
+  #whatsnew button a {
+    display: flex;
+    text-decoration: none;
   }
 
   .features-header .sub-header h4 {
