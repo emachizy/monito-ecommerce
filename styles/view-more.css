@@ -513,7 +513,9 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  
+  body {
+    margin: 0 10px;
+  }
   nav {
     display: none;
   }
@@ -691,8 +693,7 @@ footer {
   }
 
   .feature-banner {
-    background-image: url(../images/view-more/Rectangle\ 1.png)
-      ;
+    background-image: url(../images/view-more/Rectangle\ 1.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100%;
@@ -718,7 +719,7 @@ footer {
     line-height: 36px;
   }
 
-  .feature-img{
+  .feature-img {
     display: none;
   }
 
@@ -728,14 +729,13 @@ footer {
     object-fit: cover;
   }
 
-  .m-feature-img img{
+  .m-feature-img img {
     width: 100%;
     object-fit: cover;
     border-radius: 30px;
   }
 
-  .feature-banner
-   {
+  .feature-banner {
     width: 100%;
     align-items: flex-start;
     justify-content: flex-start;
