@@ -324,6 +324,14 @@ padding-bottom: 10px;
   width: 70%;
 }
 
+.m-product-body {
+  display: none;
+}
+
+.m-product-header{
+  display: none;
+}
+
 .product-page .product-header {
   display: flex;
   justify-content: space-between;
@@ -503,6 +511,9 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    margin: 0 20px;
+  }
   nav {
     display: none;
   }
@@ -547,18 +558,15 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(
-      102.87deg,
-      #fceed5 6.43%,
-      #fceed5 78.33%,
-      #ffe7ba 104.24%
-    );
+    background: transparent;
 
     /* padding: 0 20px; */
     text-align: center;
     border-radius: 20px;
     margin-left: 10px;
   }
+
+   
 
   .m-nav-link a {
     font-size: 18px;
@@ -719,6 +727,84 @@ footer {
     width: 100%;
     align-items: center;
     text-align: center;
+  }
+
+  main {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .product-page .product-header {
+    display: none;
+  }
+
+  /* .m-product-header {
+    display: flex;
+  } */
+
+  .ph-top {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+
+  .filter {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }  
+
+  .ph-top button {
+    width: 165px;
+    border: none;
+    background-color: transparent;
+  }
+
+  .ph-top form {
+    font-size: 14px;
+    font-weight: 500;
+    color: #667479;
+    background-color: transparent;
+    border: 1px solid #ccd1d2;
+    border-radius: 20px;
+    outline: none;
+    padding: 6px 10px 4px 20px;
+  }
+
+  .ph-top form select {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+  }
+
+  .m-sub-head {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .m-product-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-page {
+    width: 100%;
+  }
+
+  .side-bar {
+    display: none;
+  }
+
+.product-body {
+  display: none;
+}
+
+  .m-product-body {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
   }
 
   #our-product,
