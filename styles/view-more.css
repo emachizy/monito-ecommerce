@@ -734,11 +734,19 @@ footer {
     border-radius: 30px;
   }
 
-  .feature-banner, .m-feature-img
-  .feature-banner .hero-text {
+  .feature-banner
+   {
     width: 100%;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .feature-banner .hero-text {
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    /* text-align: center; */
   }
 
   main {
