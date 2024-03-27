@@ -29,12 +29,18 @@ nav {
   background-position: 2% -15px;
 }
 
+/* hamburger menu */
+
 .hamburger {
   display: none;
   cursor: pointer;
 }
 
 .mobile-nav {
+  display: none;
+}
+
+.m-nav-link {
   display: none;
 }
 
@@ -731,6 +737,8 @@ footer {
     width: 100%;
   }
 
+  /* mobile navigation */
+
   .hamburger {
     display: block;
   }
@@ -773,11 +781,13 @@ footer {
     font-size: 18px;
     text-decoration: none;
     padding: 15px 0px;
+    color: #003459;
+    font-weight: 700;
     transition: 0.3s ease;
   }
 
   .m-nav-link a:hover {
-    color: #003459;
+    color: #ffb775;
   }
 
   .bar {
