@@ -125,10 +125,7 @@ nav form select {
 }
 
 .hero-text {
-  background-image: url(../images/bg-text.png);
-  background-repeat: no-repeat;
-  background-size: 60px;
-  background-position: -1% 10%;
+  
   width: 100%;
   padding-top: 30px;
 }
